@@ -1,0 +1,43 @@
+@import './css/_variable.scss';
+@import './css/_app_variable.scss';
+@import './css/_util.scss';
+@import './css/_normalize.scss';
+@import './css/_grid_flex.scss';
+@import './css/_tables.scss';
+@import './css/slick.css';
+@import './css/slick-theme.css';
+@import './css/carousel_basic_01.scss';
+
+
+*{ box-sizing:border-box;}
+a { text-decoration: none;}
+body { overflow-x: hidden; }
+
+.container.padding-zero{
+  *[class ^= "col"]{ padding:0;}
+}
+.container.padding-half{
+  *[class ^= "col"]{ padding:0 7.5px;}
+}
+.test li, .test div{
+  border:1px solid; min-height: 100px;
+}
+.row{
+  padding: 0 1rem;
+}
+img.img-max{
+  width:100%;
+}
+.out-wrap{
+  width: 100%; min-height: 100vh; height: auto; overflow: hidden;
+  display: flex; flex-direction: row; flex-wrap: nowrap; 
+  align-items:stretch; align-content:stretch; 
+  .side-menu-bar{
+    width: 210px !important; 
+    z-index: 90000; height: auto;
+  }
+  .app-wrap{
+    position: relative; width: calc(100% - 210px) !important; top:0; right: 0;
+  }
+}
+

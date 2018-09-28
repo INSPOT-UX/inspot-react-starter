@@ -1,0 +1,78 @@
+.gridsample1{
+html {
+    font-size:100%; /* 16px base font-size*/
+    line-height:1.5;    
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+p { font-size:16px; font-size:1em; line-height:1.625;}
+ul,ol,dl,fieldset,p,table,pre,hr{
+    margin-bottom:24px;
+    margin-bottom:1.5em;
+    text-rendering: optimizeLegibility;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom:24px;
+    margin-bottom:1.2em;
+}
+small,.milli {
+    font-size:12px;
+    font-size:0.75em;  /* 12 / 16= */
+    line-height:2.16666666666667;   
+    /* measure( base font-size(16) * base line-height(1.625) ) / current font-size(12) = margin-bottom(2,16666666666667) */
+}
+
+h1{
+    font-size: 54px;
+    font-size: 3.375em; /* 54 / 16 */
+    line-height: 1;
+    font-weight:900;
+}
+        
+h2{
+    font-size: 39px;
+    font-size: 2.4375em; /* 39 / 16= */
+    line-height: 0.66666666666667;
+    /* measure( base font-size(16) * base line-height(1.625) ) / current font-size(39) = margin-bottom(0,66666666666667  ) */
+}
+
+h3{
+    font-size: 36px;
+    font-size: 1.875em; /* 36 / 16 = */
+    line-height: 0.72222222222222;
+    /* measure( base font-size(16) * base line-height(1.625) ) / current font-size(36) = margin-bottom(0,72222222222222 ) */
+    font-weight:900;
+}
+
+h4{
+    font-size: 26px;
+    font-size: 1.5em; /* 26 / 16 =  */
+    line-height: 1;
+    /* measure( base font-size(16) * base line-height(1.625) ) / current font-size(26) = margin-bottom(1) */
+    font-weight:900;
+}
+
+h5{
+    font-size: 24px;
+    font-size: 1.25em; /* 24 / 16 = */
+    line-height: 1.08333333333333; /* measure( base font-size(16) * base line-height(1.625) ) / current font-size(24) = margin-bottom(1,08333333333333 ) */
+    font-weight:900;
+}
+
+h6{
+    font-size: 17px;
+    font-size: 0.875em; /* 17 / 16 =  */
+    line-height: 1.52941176470588;
+    /* measure( base font-size(16) * base line-height(1.625) ) / current font-size(17) = margin-bottom(1,52941176470588 ) */
+    font-weight:900;
+}
+
+
+    figure{ 
+        margin:0; 
+        img {
+            width:100%; max-width: 100%; float: left;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+
+@import '../../css/app_variable.scss';
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.button-type02 {
+    min-width: 40px; height: $btn-height-normal; padding: 0 17px;
+    background-color: $gray-color1;
+    color:#ffffff; font-size: 15px;    
+    &.round-sm{
+        border-radius: $btn-radius-sm;
+    }
+    &.round-half{
+        border-radius: $btn-radius-half;
+        padding: 0 20px;
+    }
+    &.outlined{
+        color:$color-btn-txt;
+        background-color:#ffffff;
+        border: 1px solid $black-color6;
+        &.round-sm{
+            border-radius: $btn-radius-sm;
+        }
+        &.round-half{
+            border-radius: $btn-radius-half;
+            padding: 0 20px;
+        }        
+    }    
+}
+
+.Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px; height: $btn-height-big;
+    font-size: 16px;
+    border-radius: $btn-radius-big; border-width: 0;
+    background-color: #00C3FF;
+    outline: 0; transition: all 0.3s;
+
+    &--big {
+        width: 300px;
+        height: 75px;
+    }
+    
+    &--hovered {
+        background-color: #00A7CE;
+    }
+    
+    &--disabled {
+        background-color: #CECECE;
+        color: #E5E5E5;
+        user-select: none;
+        pointer-events: none;
+        
+        & .Button__value {
+            color: #FFFFFF;
+        }
+    }
+    
+    &__icon {
+        font-family: 'Material Icons';
+        width: 20px;
+        font-size: 20px;
+        color: #FFFFFF;
+        margin-right: 16px;
+    }
+    
+    &__value {
+        color: #000000;
+    }
+}

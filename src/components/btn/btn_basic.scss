@@ -1,0 +1,29 @@
+@import '../../css/variable.scss';
+
+$btn-radius-min: 3px;
+$btn-height1: 36px;
+
+.btn { 
+    border-radius: $btn-radius-min;
+    background-color: $color-primary1;
+    min-width: 40px; height: $btn-height1; padding: 0 1rem;
+    color:#fff; transition: all 0.2s;
+    &.ghost{
+        background-color: rgba(255,255,255,0);
+        border: 1px solid rgba(0,0,0,0.2);
+        color: $color-text1;
+    }
+    &.round {
+        border-radius: calc(#{$btn-height1} / 2);
+    }
+    &.width-full{
+        width: 100%;
+    }
+}
+.btn:hover{
+    background-color: darken($color-primary1, 20);
+    &.ghost:hover{
+        background-color: rgba(255,255,255,1);
+        border: 1px solid rgba(0,0,0,0.7);
+    }
+}
