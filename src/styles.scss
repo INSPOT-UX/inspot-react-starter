@@ -9,7 +9,7 @@
 @import './css/carousel_basic_01.scss';
 
 
-*{ box-sizing:border-box;}
+*, *:before, *:after { box-sizing:border-box;}
 a { text-decoration: none;}
 body { overflow-x: hidden; }
 

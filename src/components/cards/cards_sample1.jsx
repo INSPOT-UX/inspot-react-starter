@@ -11,7 +11,7 @@ import {
     PaymentCard
   } from 'react-ui-cards';
 
-export class CardsSample1 extends React.Component {
+export class CardsSample01 extends React.Component {
     render(){
         return(
         <div className="container  system-wrap">
@@ -310,4 +310,4 @@ export class CardsSample1 extends React.Component {
 }
 }
 
-export default CardsSample1;
+export default CardsSample01;

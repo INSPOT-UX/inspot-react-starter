@@ -1,0 +1,38 @@
+.scroll-section {
+  height: 3000px; width: 700px; margin:0 auto;
+  .container {
+    width: 700px; margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box {
+        position: fixed;
+        top: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 500px;
+        transition: all .2s ease;
+      }
+      
+      .is-green {
+        background-color: green;
+      }
+      
+      .is-yellow {
+        background-color: yellow;
+        top: 20%;
+        margin-left: -200px;
+      }
+      
+      .is-red {
+        background-color: red;
+        top: 60%;
+        margin-left: 200px;
+      }
+  }
+}
+
+
+
